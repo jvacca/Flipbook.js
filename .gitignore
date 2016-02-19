@@ -1,6 +1,4 @@
-.DS_Store
-_archive/
+_achive/
 _assets/
-examples/
 node_modules/
-
+.DS_Store

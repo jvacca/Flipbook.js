@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+:focus {
+	outline:none;
+}
+
+::-moz-focus-inner {
+	border:0;
+}
+
+.clear {
+	clear:both;
+}
+
+body {
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	position: absolute;
+	width: 298px;
+	height: 598px;
+	top: 0;
+	left: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	overflow: hidden;
+	border: thin solid #666;
+}
+
+/* ////////// LOADING  ////////////////*/
+#loader {
+	/*display: none;*/
+	position: absolute;
+	border: thin solid #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	top: 0;
+	left: 0;
+	width:298px;
+	height:598px;
+	background-color: #FFF;
+}
+
+.loading {
+	position: absolute;
+	width: 100%;	
+	top: 280px;
+	text-align: center;
+}
+
+/* ////////// CONTENT  ////////////////*/
+/* ////////// HEADER  ////////////////*/
+#header {
+	position: absolute;
+	width: 300px;
+	height: 57px;
+	top: 0;
+	left: 0;
+	background-color: #828282;
+}
+
+.headerTxt {
+	position: absolute;
+	left: 29px;
+	top: 8px;
+}
+
+/* ////////// FOOTER  ////////////////*/
+#footer {
+	position: absolute;
+	width: 300px;
+	height: 26px;
+	left: 0;
+	top: 572px;
+	background-color: #828282;
+}
+
+#footerTxt {
+	position: absolute;
+	width: 100%;
+	left: 6px;
+	top: 8px;
+}
+
+/* ////////// ELEMENTS  ////////////////*/
+#elements {
+	
+}
+
+.copyimages {
+	display: none;
+}
+
+/* ////////// FRAME  ////////////////*/
+#f1txt1_f2txt1_f3txt1, #f2txt2_f3txt3_f5txt3, #f3txt2, #f4txt1, #f5txt1, #f5txt2, #box1, #box2, #logo {
+	opacity: 0;
+	position: absolute;
+}
+
+/* ////////// FRAME 1  ////////////////*/
+#f1txt1_f2txt1_f3txt1 {
+	left: 22px;
+	top: 73px;	
+}
+
+#box1 {
+	width: 286px;
+	height: 1px;
+	left: 6px;
+	top: 106px;
+	background: repeat-x url(boxPurpleBg.gif) 0 0;
+	border-radius: 8px 0 8px 8px;
+	-moz-border-radius: 8px 0 8px 8px;
+	-webkit-border-radius: 8px 0 8px 8px;
+	-o-border-radius: 8px 0 8px 8px;
+	overflow: hidden;
+}
+
+#txtBox1 {
+	position: absolute;
+	left: -225px;
+	/*left: 30px;*/
+	top: 12px;
+}
+
+/* ////////// FRAME 2  ////////////////*/
+#box2 {
+	width: 286px;
+	height: 1px;
+	/*height: 68px;*/
+	left: 6px;
+	/*top: 181px;*/
+	top: 193px;
+	background: repeat-x url(boxOrangeBg.gif) 0 6px #F5B728;
+	border-radius: 8px 0 8px 8px;
+	-moz-border-radius: 8px 0 8px 8px;
+	-webkit-border-radius: 8px 0 8px 8px;
+	-o-border-radius: 8px 0 8px 8px;
+}
+
+#txtBox2 {
+	position: absolute;
+	/*left: 44px;*/
+	left: -201px;
+	top: 12px;
+}
+
+#f2txt2_f3txt3_f5txt3 {
+	left: 15px;
+	top: 281px;	
+}
+
+/* ////////// FRAME 3  ////////////////*/
+#f3txt2 {
+	left: 89px;
+	top: 249px;	
+}
+
+/* ////////// FRAME 4  ////////////////*/
+#f4txt1 {
+	left: 69px;
+	top: 162px;	
+}
+
+/* ////////// FRAME 5  ////////////////*/
+#logo {
+	left: 101px;
+	top: 69px;
+}
+
+#f5txt1 {
+	left: 34px;
+	top: 158px;	
+}
+
+#f5txt2 {
+	left: 8px;
+	top: 179px;	
+}
+
+#btn {
+	position: absolute;
+	width: 202px; 
+	height: 39px;
+	/*left: 46px;*/
+	left: -202px;
+	top: 210px;	
+	background: repeat-x url(purpleBg.gif) 0 0;
+	border-radius: 8px 0 8px 8px;
+	-moz-border-radius: 8px 0 8px 8px;
+	-webkit-border-radius: 8px 0 8px 8px;
+	-o-border-radius: 8px 0 8px 8px;
+	overflow: hidden;
+}
+
+#orange {
+	position: absolute;
+	background: repeat-x url(orangeBgBtn.gif) 0 0;
+	width:47px;
+	height: 39px;
+	/*left: 155px;*/
+	left: 202px;
+	top: 0;
+	border-radius: 0 0 8px 0;
+	-moz-border-radius: 0 0 8px 0;
+	-webkit-border-radius: 0 0 8px 0;
+	-o-border-radius: 0 0 8px 0;
+}
+
+#arrow {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+}
+
+#txtBtn {
+	position: absolute;
+	opacity: 0;
+	left: 40px;
+	top: 12px;
+}
+
+/* ///////// ISI ////////// */
+/* ///////// ISI HOLDER ////////// */
+#ISI_holder {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 1604px;
+	left: 0;
+	top: 353px;
+	background-color: #FFF;	
+}
+
+/* ////////// SEPARATION  ////////////////*/
+#separation {
+	position: absolute;
+	background: url(isiGradient.png) repeat-x;
+	width: 100%;
+	height: 7px;
+	top: 0;
+	left: 0;
+}
+
+/* ////////// ISI TEXT FORMAT ////////////////*/
+.ISI_header {
+	font: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #76004b;
+	line-height: 100%;
+	margin: 6px 0 0 6px;;
+}
+
+.copy {
+	position: absolute;
+	left: 6px;
+	margin-top: 6px;
+	width: 265px;
+	font: Arial, Helvetica, sans-serif;
+	color: #231F20;
+	font-weight: normal;
+}
+
+.bold {
+	font-weight: bold;
+	color: #76004b;
+	line-height: 100%;
+}
+
+p {
+	margin-top: -3px;
+}
+
+ul {
+	margin: -8px 0 14px -20px;
+}
+
+li {
+	margin: 2px 0 6px 0;
+}
+
+#BMSLogo {
+	margin: 0 0 10px 30px;
+}
+
+sup {
+	position: absolute;
+	margin-top: 0px;
+	font-size: 6px;
+}
+
+/* //////////// SCROLLER //////////////////*/
+#scroller, #scroller2 {
+	position: absolute;
+	width: 294px;
+	top: 32px;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+#scroller {	
+	height: 191px;
+}
+
+#scroller2 {
+	height: 420px;
+}
+
+#miniscroll-scroller {
+}
+
+.miniscroll-container {
+	margin-top: 4px !important;
+}
+
+.miniscroll-thumb {
+	width: 8px !important;
+   	background-color: #A9A9A9 !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	cursor: pointer;
+}
+	
+.miniscroll-tracker {
+	position: absolute;
+	background-color: #D9D9D9 !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+/* ///////// BUTTONS SETUP ////////// */
+#expandCollapse {
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+	left: 245px;
+	top: 11px;
+	width: 49px;
+	height: 11px;
+	background: no-repeat url(btnExpand-Collapse.gif) 0 0;
+}
+
+.content {
+	top: 0px;
+	height: 200px;
+}
+
+.isiExpanding {
+	top: 120px !important;
+	height: 454px !important;
+	-moz-transition: all .6s;
+	-webkit-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+} 
+
+.contentCollapse {
+	top: 353;
+	height: 247px;
+}
+
+.collapsing {
+	top: 353px !important;
+	height: 284px !important;
+	-moz-transition: all .6s;
+	-webkit-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+}
+
+a:link {
+	color: #76004b !important;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #76004b !important;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #76004b;
+}
+
+a:active {
+   color: #76004b !important;
+}
+
+#ctaBtn {
+	position: absolute;
+	cursor: pointer;
+	width: 300px;
+	height: 353px;
+	top: 0;
+	left: 0;
+}

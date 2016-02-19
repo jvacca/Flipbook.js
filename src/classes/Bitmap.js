@@ -50,7 +50,7 @@
     };
 
     Flipbook.Bitmap.prototype = Object.create(Flipbook.DisplayObject.prototype);
-    Flipbook.Bitmap.prototype.constructor = Flipbook.DisplayObject;
+    Flipbook.Bitmap.prototype.constructor = Flipbook.Bitmap;
 
     extend(Flipbook.Bitmap.prototype, {
 

@@ -30,7 +30,7 @@
     };
 
     Flipbook.Textfield.prototype = Object.create(Flipbook.DisplayObject.prototype);
-    Flipbook.Textfield.prototype.constructor = Flipbook.DisplayObject;
+    Flipbook.Textfield.prototype.constructor = Flipbook.Textfield;
 
     extend(Flipbook.Textfield.prototype, {
 

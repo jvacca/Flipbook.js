@@ -27,7 +27,7 @@
     };
 
     Flipbook.Shape.prototype = Object.create(Flipbook.DisplayObject.prototype);
-    Flipbook.Shape.prototype.constructor = Flipbook.DisplayObject;
+    Flipbook.Shape.prototype.constructor = Flipbook.Shape;
 
     extend(Flipbook.Shape.prototype, {
 

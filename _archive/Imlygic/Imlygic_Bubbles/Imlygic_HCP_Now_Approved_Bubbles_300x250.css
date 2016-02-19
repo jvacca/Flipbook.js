@@ -1,0 +1,203 @@
+@charset "UTF-8";
+:focus {
+    outline:none;
+}
+
+html{
+    font-family: Arial, sans-serif;
+    font-size: .6em;
+}
+
+a, img {
+    border:none;
+    outline:none
+}
+
+::-moz-focus-inner {
+    border:0;
+}
+
+.clear {
+    clear:both;
+}
+
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    position: absolute;
+    width: 298px;
+    height: 248px;
+    top: 0;
+    left: 0;
+    border: 1px solid #333333;
+    overflow: hidden;
+}
+
+#loader {
+    /*display: none;*/
+    position: absolute;
+    border: thin solid #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    top: 0;
+    left: 0;
+    width:298px;
+    height:248px;
+    background-color: #FFF;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;    
+    top: 120px;
+    text-align: center;
+}
+
+#rule1{
+    position:absolute;
+    width:298px;
+    top:0px;
+    margin:auto 0;
+    border: 1px solid #d7d7d7;
+}
+
+.heading {
+    font-weight: bold;
+    color: #0272AE;
+}
+
+#ctaBtn {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 250px;
+}
+
+#btn {
+    position: absolute;
+    left: 170px;
+    top: 76px;
+    width: 117px;
+    height: 25px;
+    background: url(btn.gif) no-repeat;
+    background-position: 0 0;
+    background-size: 117px 50px;
+    overflow: hidden;
+}
+
+.btnO {
+    opacity: 0;
+}
+
+.btnOver {
+    background-position: 0 -25px !important;
+}
+
+.btnOut {
+    background-position: 0 0 !important;
+}
+
+.btnOpacity {
+    opacity: 1  !important;
+    -moz-transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+.bold { 
+    font-weight: bold;
+}
+
+
+p{
+    margin-top: .8em;
+    margin-bottom: 0em;
+}
+
+#indication{
+    margin-bottom: 0em;
+    margin-top:0em;
+}
+
+#ISI_holder {
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 102px;
+    left: 0;
+    top: 250px;
+    line-height: 130%;
+}
+
+/* //////////// SCROLLER //////////////////*/
+
+.scroller{
+    position:absolute;
+    display:block;
+    width:290px;
+    height:88px;
+    overflow: hidden;
+    margin-top: 9px;
+    margin-left: .6em;
+    margin-right:.8em;
+}
+
+.copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #333333;
+    position: absolute;
+    left:5px;
+    width:265px;
+}
+
+.isiSlideUp {
+    top: 131px !important;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s/* ease-out 0.20s*/;
+}
+
+.PISlideUp {
+    top: 227px !important;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s/* ease-out 0.20s*/;
+} 
+
+
+#prescribingInfo{
+    position: absolute;
+    top:348px;
+}
+
+#miniscroll-scroller {
+    
+}
+
+.miniscroll-container {
+    margin-top: 0px !important;
+}
+
+.miniscroll-thumb {
+    width: 17px !important;
+    background-image: url("img_thumb.gif");
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.miniscroll-tracker {
+    width: 17px;
+    position: absolute;
+    background: url('track_bg.png') repeat-y;
+}
+

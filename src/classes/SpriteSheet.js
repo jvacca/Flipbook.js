@@ -38,7 +38,7 @@
     };
 
     Flipbook.SpriteSheet.prototype = Object.create(Flipbook.DisplayObject.prototype);
-    Flipbook.SpriteSheet.prototype.constructor = Flipbook.DisplayObject;
+    Flipbook.SpriteSheet.prototype.constructor = Flipbook.SpriteSheet;
 
     extend(Flipbook.SpriteSheet.prototype, {
 

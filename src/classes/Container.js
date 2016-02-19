@@ -25,7 +25,7 @@
     };
 
     Flipbook.Container.prototype = Object.create(Flipbook.DisplayObject.prototype);
-    Flipbook.Container.prototype.constructor = Flipbook.DisplayObject;
+    Flipbook.Container.prototype.constructor = Flipbook.Container;
 
     extend(Flipbook.Container.prototype, {
 

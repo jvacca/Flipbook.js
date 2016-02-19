@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style>
+			body {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#myCanvas {
+				border: 1px solid #9C9898;
+			}
+		</style>
+		<script>
+
+			window.requestAnimFrame = (function(callback){
+		        return  window.requestAnimationFrame   ||
+		            window.webkitRequestAnimationFrame ||
+		            window.mozRequestAnimationFrame    ||
+		            window.oRequestAnimationFrame      ||
+		            window.msRequestAnimationFrame     ||
+		            function(callback, element){
+		                return window.setTimeout(callback, 1000 / 60);
+		            };
+		    })();
+
+		    window.cancelRequestAnimFrame = (function(){
+		        return window.cancelAnimationFrame              ||
+		            window.webkitCancelRequestAnimationFrame    ||
+		            window.mozCancelRequestAnimationFrame       ||
+		            window.oCancelRequestAnimationFrame         ||
+		            window.msCancelRequestAnimationFrame        ||
+		            function(){
+		                console.log("Shit out of luck!");
+		            };
+		    })();
+
+		    Stuff = {};
+
+		    myRectangle = function() {
+		    	this.x = 0;
+		    	this.y = 75;
+		    	this.width = 100;
+		    	this.height = 50;
+		    	this.borderWidth = 5;
+		    	this.velocityX = 0;
+		    	this.velocityY = 0;
+		    }
+
+		    function drawRectangle(myRectangle, context) {
+		    	context.beginPath();
+		    	context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);
+		    	context.fillStyle = myRectangle.fillStyle;
+		    	context.fill();
+		    	context.lineWidth = myRectangle.borderWidth;
+		    	context.strokeStyle = 'black';
+		    	context.stroke();
+		    }
+
+		    function get_random_color() {
+		    	var letters = '0123456789ABCDEF'.split('');
+		    	var color = '#';
+		    	for (var i=0; i <  6; i++) {
+		    		color += letters[Math.round(Math.random() * 15)];
+		    	}
+
+		    	return color;
+		    }
+
+		    function init() {
+		    	Stuff.rectangles = [];
+
+		    	for (var i=0; i<20; i++) {
+		    		Stuff.rectangles[i] = new myRectangle();
+		    		Stuff.rectangles[i].x = Math.random() * 500;
+		    		Stuff.rectangles[i].y = Math.random() * 500;
+		    		Stuff.rectangles[i].width = Math.random() * 100+20;
+		    		Stuff.rectangles[i].height = Math.random() * 50+20;
+		    		Stuff.rectangles[i].borderWidth = Math.random() * 5;
+		    		//Stuff.rectangles[i].fillStyle = '#8ED6FF';
+		    		Stuff.rectangles[i].fillStyle = get_random_color();
+		    	}
+
+		    	Stuff.centerX = 250;
+		    	Stuff.centerY = 250;
+		    }
+
+		    function draw(context) {
+		    	drawRectangle(Stuff.rectangles, context);
+		    }
+
+		    function updateRectangle(rect) {
+		    	rect.velocityX += Math.random()*0.001*(Stuff.centerX - rect.x);
+		    	rect.velocityY += Math.random()*0.001*(Stuff.centerY - rect.y);
+		    	rect.x += rect.velocityX;
+		    	rect.y += rect.velocityY;
+		    }
+
+		    function animate() {
+		    	var canvas = document.getElementById('myCanvas');
+		    	var context = canvas.getContext('2d');
+
+		    	context.clearRect(0, 0, canvas.width, canvas.height);
+
+		    	for (var i=0; i<20; i++) {
+		    		updateRectangle(Stuff.rectangles[i], context);
+		    	}
+
+		    	for (var i=0; i<20; i++) {
+		    		drawRectangle(Stuff.rectangles[i], context);
+		    	}
+
+		    	requestAnimationFrame(function() {
+		    		animate();
+		    	});
+		    }
+
+		    window.onload = function() {
+		    	console.log("Dude!");
+
+		    	init();
+		    	animate();
+		    }
+
+		</script>
+	</head>
+	  
+	<body>
+
+		<canvas id="myCanvas" width="500" height="500"></canvas>
+		<!-- <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+		<script type="text/javascript" src="js/canvas.js"></script> -->
+		
+	</body>
+	
+	
+	
+</html>
