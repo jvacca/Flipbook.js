@@ -26,4 +26,3 @@ Can work with CreateJs Tweener or Greensock Tweener or create your own tweens.
 
 Drag and Drop functionality
 Support touch events
-Fake 3D positioning
